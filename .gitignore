@@ -1,0 +1,22 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore IDE configuration files
+.vscode/
+.idea/
+
+# Ignore environment variable files
+.env
+
+#Nodejs
+**/node_modules/
+**/package-lock.json
+**/package.json
+**/core.db
+**/ core.db
+**/index.html

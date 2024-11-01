@@ -1,0 +1,13 @@
+.notifications-container {
+    display: flex;
+}
+
+.notifications-container>div {
+    flex: 1;
+    padding: 10px;
+}
+
+h4 {
+    margin-bottom: 10px;
+    /* Add space below the title */
+}

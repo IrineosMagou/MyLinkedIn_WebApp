@@ -1,0 +1,76 @@
+/* Container for the entire grid */
+.article-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping to handle multiple rows if needed */
+    gap: 20px;
+    /* Gap between items */
+    padding: 20px;
+}
+
+/* Category section styling */
+.category-section {
+    flex: 1 1 calc(50% - 20px);
+    /* Take up half the width, minus the gap */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+/* Header for each category */
+.category-section h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Grid inside each category */
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Individual grid item styling */
+.grid-item {
+    flex: 1 1 calc(33% - 20px);
+    /* Show 3 items per row */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for grid items */
+.grid-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .category-section {
+        flex: 1 1 100%;
+        /* Full width on small screens */
+    }
+
+    .grid-item {
+        flex: 1 1 calc(50% - 20px);
+        /* Two items per row on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-item {
+        flex: 1 1 100%;
+        /* One item per row on very small screens */
+    }
+}

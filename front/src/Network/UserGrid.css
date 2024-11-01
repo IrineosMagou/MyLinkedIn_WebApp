@@ -1,0 +1,37 @@
+/* src/UserGrid.css */
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* src/UserProfile.css */
+.user-profile {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+}
+
+.user-profile .avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 12px;
+}
+
+.user-profile h3 {
+  margin: 8px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.user-profile p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #666;
+}

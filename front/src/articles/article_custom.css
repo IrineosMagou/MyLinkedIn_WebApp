@@ -1,0 +1,42 @@
+.article-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* One category per row */
+}
+
+.category-section {
+    margin-bottom: 20px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Adjusted to smaller size */
+    grid-gap: 12px;
+    /* Reduced gap between grid items */
+}
+
+.grid-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 8px;
+    /* Smaller padding */
+    border-radius: 6px;
+    /* Slightly smaller border radius */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Slightly reduced shadow */
+}
+
+.grid-item h4 {
+    font-size: 1rem;
+    /* Smaller title font size */
+    margin-bottom: 6px;
+    /* Reduced spacing between elements */
+}
+
+.grid-item p {
+    font-size: 0.85rem;
+    /* Smaller text font size */
+    margin-bottom: 4px;
+    /* Reduced spacing between paragraphs */
+}
