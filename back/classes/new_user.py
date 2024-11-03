@@ -62,7 +62,7 @@ class NewUser():
             user : Optional[int] = None
     ):
         if picture:
-            pic_dir = "/mnt/c/Users/User/Desktop/TED24/201700208_ΤΕΔ24/pictures"
+            pic_dir = "/path/to/pictures"
             path_to_save = '/pictures/'
             if not user:
                 with self.db_conn as conn:
