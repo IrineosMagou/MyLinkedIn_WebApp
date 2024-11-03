@@ -8,7 +8,7 @@ from datetime import datetime
 import uuid
 import os
 
-BASE_MEDIA_DIR = "/mnt/c/Users/User/Desktop/201700208_ΤΕΔ24/back/media/"
+BASE_MEDIA_DIR = "/path/to/media/"
 MEDIA_PATH = 'media/'
 
 class Articles():
